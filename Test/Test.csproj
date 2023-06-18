@@ -6,9 +6,18 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>Anh-bieu-tuong-dau-cham-hoi-png.ico</ApplicationIcon>
+    <PackageIcon>dau-hoi-cham-1.jpg</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="Anh-bieu-tuong-dau-cham-hoi-png.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Forms.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>

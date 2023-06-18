@@ -38,8 +38,9 @@
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(784, 561);
+            pictureBox1.Size = new Size(980, 738);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
@@ -47,14 +48,14 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 19F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(784, 561);
+            ClientSize = new Size(980, 738);
             Controls.Add(pictureBox1);
             ForeColor = Color.Tomato;
-            Margin = new Padding(2);
+            Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(2, 3, 2, 3);
             Name = "Form1";
-            Text = "Form1";
             Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

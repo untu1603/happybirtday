@@ -1,3 +1,5 @@
+using System.Runtime.CompilerServices;
+
 namespace Test
 {
     internal static class Program
@@ -11,7 +13,10 @@ namespace Test
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Forms forms = new Forms();
+            Application.Run(forms);
+            if (forms.Check) {
+                Application.Run(new Form1()); }
         }
     }
 }
